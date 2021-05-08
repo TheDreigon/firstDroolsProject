@@ -1,0 +1,31 @@
+//created on: 7/mai/2021
+package droolscours
+
+//list any import classes here.
+import droolscours.Account;
+import util.OutputDisplay;
+
+//declare any global variables here
+global OutputDisplay showResults;
+
+
+
+rule "Your First Rule"
+
+    when
+        //conditions
+        Account(  )
+    then
+        //actions
+        showResults.showText("The account exists");
+
+end
+
+rule "Your Second Rule"
+    //include attributes such as "salience" here...
+    when
+        //conditions
+    then
+        //actions
+
+end
